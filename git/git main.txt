@@ -4,6 +4,24 @@ git init
 # Add all files to staging
 git add .
 
+# Commit changes
+git commit -m "<name>"
+
+# Add the remote URL to local repo
+git remote add origin <url>
+
+# Push your local code to the remote repository
+git branch -M main
+git push -u origin main
+
+# Retrieve the changes from the remote repo
+git fetch origin
+
+# Merge remote changes into local branch
+git pull origin main
+
+# Force push (overwrites remote repo)
+git push -f origin main
 
 #clone repo
 git clone <ssh_link>
