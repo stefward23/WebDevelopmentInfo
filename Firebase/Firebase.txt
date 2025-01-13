@@ -1,0 +1,3 @@
+firebase deploy
+npm install -g firebase-tools
+

@@ -1,0 +1,14 @@
+# Create an environment
+```
+python3 -m venv .venv
+```
+
+```
+. .venv/bin/activate
+```
+
+```
+pip install Flask
+```
+
+# Routes are templates

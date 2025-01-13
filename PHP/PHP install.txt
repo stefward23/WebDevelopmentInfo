@@ -1,0 +1,5 @@
+sudo apt install php-common libapache2-mod-php php-cli
+
+sudo vim /var/www/html/example.php
+
+http://<ip_address>/example.php

@@ -1,0 +1,23 @@
+sudo apt-get install phpmyadmin
+
+password: 
+rootpasswd: mysqlpassword
+
+sudo nano /etc/apache2/apache2.conf
+
+Include /etc/phpmyadmin/apache.conf
+
+sudo /etc/init.d/apache2 restart
+
+
+
+
+
+
+
+
+
+
+sudo mysql -u root -p
+
+line 225 /etc/apache2/apache2.conf

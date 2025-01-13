@@ -1,0 +1,13 @@
+# Initialize repo
+git init
+
+# Add all files to staging
+git add .
+
+
+#clone repo
+git clone <ssh_link>
+
+#remove git tracking 
+rm -rf </path/to/repo/.git>
+

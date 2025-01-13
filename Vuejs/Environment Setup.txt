@@ -1,0 +1,179 @@
+#Delete style.css 
+#Delete image in assets
+#Delele file in components
+#Delete text in App.vue
+#Add text in App.vue
+<script setup>
+
+import { RouterView } from 'vue-router'
+
+</script>
+
+<template>
+
+<RouterView/>
+
+</template>
+
+
+#Create router folder
+#Create views folder
+#Create files and images folders in assets folder
+#Create base.css in assets folder
+#Create main.css in assets folder
+#Create index.js in router folder
+#Create HomePage.vue in views folder
+
+
+#Changes in index.html
+favicon
+title
+
+#Changes in main.js
+import { createApp } from 'vue'
+
+import App from './App.vue'
+
+import router from './router'
+
+import './assets/main.css'
+
+const app = createApp(App)
+
+app.use(router)
+
+app.mount('#app')
+
+
+#Add to main.css
+@import './base.css';
+
+#Add to index.js file
+import { createRouter, createWebHistory } from 'vue-router'
+import CHANGEME from 'CHANGEME_PATH'
+
+const router = createRouter({
+    history: createWebHistory(import.meta.env.BASE_URL),
+    routes: [
+        {
+            path: '/',
+            name: 'home',
+            component: HomePage
+
+        },
+
+{
+      path: '/CHANGEME',
+      name: 'CHANGEME',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('CHANGEME_PATH')
+    },
+        
+    ],
+      //Returns scrollbar to top 
+  scrollBehavior (to, from, savedPosition){
+    return savedPosition || {top:0}
+  },
+})
+
+export default router
+
+#Add to base.css
+/* color palette from <https://github.com/vuejs/theme> */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+a:-webkit-any-link {
+  text-decoration: none;
+}
+
+button {
+  background-color: transparent;
+  border-width: 0;
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  padding: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+  padding: 0;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.6;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

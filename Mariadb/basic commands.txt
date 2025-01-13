@@ -1,0 +1,12 @@
+# Login 
+mariadb -u root -p -h localhost
+
+# Create a db structure
+CREATE DATABASE <name>;
+
+# USE
+USE <name>;
+
+# Connect client to server (default port #3306)
+mysql -u <username> -p -h <host> -P <port>
+mysql -u <username> -p -h <host> <database_name>

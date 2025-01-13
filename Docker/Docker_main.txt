@@ -1,0 +1,56 @@
+#list currently running containers:
+docker ps
+
+#list all docker containers (running and stopped):
+docker ps -a
+
+#login to docker
+docker login -<username>
+
+#build docker image
+docker build -t <image_name> .
+
+#run a container from an image, with a custom name
+docker run -d -p 80:80 <image_id> <container_name>
+docker run --name <container_name> <image_name>
+
+#run a container with and publish a container’s port(s) to the host
+docker run -p <host_port>:<container_port> <image_name>
+
+#open a shell inside a running container:
+docker exec -it <container_name> sh
+
+#tag images (to see local images)
+docker tag <image_name> <user_name>/<repo_name>:<new_tag>
+
+#pull/push
+docker pull <repo_name>/<image_name>:<image_tag>
+docker push <repo_name>:<tag_name>
+
+#remove images
+docker rmi <image_name>:<tag_name>
+
+#remove containers
+docker rm <container_name>
+
+#adding docker tags
+docker tag <image_name>:<tag_name> <ex_repo_name>:<tag_name>
+docker push <ex_repo_name>
+
+#stop container
+docker stop <container_name>
+
+#start container
+docker stop <container_name>
+
+#search for user repos
+docker search <username>
+
+#exec into a container (alpine e.g.)
+docker exec -it <image_id> /bin/sh
+
+#prune docker
+docker system prune -a
+
+#to search for docker image tags
+curl -s https://registry.hub.docker.com/v2/repositories/<repo_name>/tags | jq '.results[].name'

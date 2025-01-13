@@ -1,0 +1,23 @@
+#Create a Dockerfile file
+FROM <name_of_image>
+COPY <source> <destination>
+
+(e.g. If using nginx, nginx's default site location)
+COPY <source_path> /usr/share/nginx/html
+
+#Expose ports (if not specified TCP is used)
+#EXPOSE 80 (mainly used as documentation)
+
+#CMD entry points. Adds commands that nginx image passes in when started by default 
+(e.g. CMD ["nginx", "-g", "daemon off;"])
+
+
+#Create .dockerignore file
+enter **/<file_name> into file
+
+docker run -d -p 80:80 <image_id> <container_name>
+
+docker ps 
+
+#exec into a container (alpine e.g.)
+docker exec -it <image_id> /bin/sh

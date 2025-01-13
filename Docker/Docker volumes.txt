@@ -1,0 +1,19 @@
+# Create a new volume
+docker volume create <name>
+
+# Default path 
+var/lib/docker/volumes/
+
+# List volumes
+docker volume list
+docker volume inspect <name>
+
+# Remove volume
+docker volume rm <name>
+
+# Remove all local volumes not in use
+docker volume prune
+
+# Start a container with a volume
+docker  run --name my_nginx_c1 --volume my_nginx_volume:/usr/share/nginx/html -d nginx
+

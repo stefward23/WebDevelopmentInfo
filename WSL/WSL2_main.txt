@@ -1,0 +1,20 @@
+wsl --list --verbose
+wsl -t DISTRO-NAME
+
+wsl --list --online
+wsl --install -d <name>
+
+wsl --set-default <distro_name>
+
+wsl --shutdown
+wsl --terminate <distro name>
+wsl --unregister <DistributionName>
+
+
+sudo apt update
+sudo apt full-upgrade -y
+
+wsl --mount <DiskPath>
+
+#check wsl version 
+wsl.exe --version

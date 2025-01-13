@@ -1,0 +1,5 @@
+@supports (scrollbar-color: var(--accent-color) var(--white-color)) {
+  * {
+    scrollbar-color: var(--accent-color) var(--white-color);
+  }
+}
