@@ -13,6 +13,25 @@ SHOW TABLES;
 # Show entire table info
 SELECT * FROM <table_name>;
 
+# Create a table
+CREATE TABLE <table_name> (
+<column_name> INT AUTO_INCREMENT PRIMARY KEY,
+<column_name> VARCHAR(100),
+<column_name> VARCHAR(100),
+);
+
+# Insert data into a table
+INSERT INTO <table_name> (name, email) VALUES ('John Doe', 'john.doe@example.com');
+
+
+# Update data in a table
+UPDATE users SET email = 'john.doe@newdomain.com' WHERE name = 'John Doe';
+
+
+# Delete from table
+DELETE FROM users WHERE name = 'John Doe';
+
+
 # Connect client to server (default port #3306)
 mysql -u <username> -p -h <host> -P <port>
 mysql -u <username> -p -h <host> <database_name>
