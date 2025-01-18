@@ -1,26 +1,23 @@
 # Create/build and start the containers specified in the compose file
-docker-compose up
+docker-compose <name_of_yaml_file> up -d
 
 # Start the containers specified in the compose file
-docker-compose start
+docker-compose <name_of_yaml_file> start
 
 # Stop and delete the containers specified in the compose file
-docker-compose down
+docker-compose <name_of_yaml_file> down
 
 # Stop (not delete) the containers specified in the compose file
-docker-compose stop
+docker-compose <name_of_yaml_file> stop
 
 # Build (but will not start) the containers specified in the compose file
-docker-compose build
+docker-compose <name_of_yaml_file> build
 
 # Test the docker-compose file syntax
 docker-compose config
 
 # Check the logs
 docker-compose logs
-
-# Compose up
-docker-compose -f <name_of_yaml_file> up -d 
 
 version ('3.3') - This is placed at the top of the file and is used to identify what version of Compose the docker-compose.yml is written for.
 
