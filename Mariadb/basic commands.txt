@@ -7,6 +7,12 @@ CREATE DATABASE <name>;
 # USE
 USE <name>;
 
+# Show tables
+SHOW TABLES;
+
+# Show entire table info
+SELECT * FROM <table_name>;
+
 # Connect client to server (default port #3306)
 mysql -u <username> -p -h <host> -P <port>
 mysql -u <username> -p -h <host> <database_name>
