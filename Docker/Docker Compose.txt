@@ -4,7 +4,6 @@ docker-compose up
 # Start the containers specified in the compose file
 docker-compose start
 
-
 # Stop and delete the containers specified in the compose file
 docker-compose down
 
@@ -19,6 +18,9 @@ docker-compose config
 
 # Check the logs
 docker-compose logs
+
+# Compose up
+docker-compose -f <name_of_yaml_file> up -d 
 
 version ('3.3') - This is placed at the top of the file and is used to identify what version of Compose the docker-compose.yml is written for.
 
