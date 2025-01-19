@@ -1,0 +1,19 @@
+# How to clone a specific repo folder 
+
+1)
+git clone --no-checkout --depth=1 --filter=blob:none <repo_url>
+
+2)
+cd <folder>
+
+3)
+git sparse-checkout init --cone
+
+4)
+copy repo path
+
+5)
+git sparse-checkout set /path/to/folder
+
+6)
+git checkout <main/branch/etc>

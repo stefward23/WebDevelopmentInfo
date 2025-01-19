@@ -1,3 +1,7 @@
+# Git config
+git config --global user.name
+git config --global user.email
+
 # Initialize repo
 git init
 
@@ -29,3 +33,5 @@ git clone <ssh_link>
 #remove git tracking 
 rm -rf </path/to/repo/.git>
 
+# Allow unrelated histories
+git pull origin main --allow-unrelated-histories
