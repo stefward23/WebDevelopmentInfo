@@ -33,5 +33,17 @@ git clone <ssh_link>
 #remove git tracking 
 rm -rf </path/to/repo/.git>
 
+# Check current remote URL
+git remote -v
+
+# Update remote URL
+git remote set-url origin <git@github.com:<user_name>/<repo_name.git>
+
+# Add new remote URL
+git remote add origin git@github.com:stefward23/WebDevelopmentInfo.git
+
+
 # Allow unrelated histories
 git pull origin main --allow-unrelated-histories
+
+

@@ -34,9 +34,10 @@ environment (MYSQL_ROOT_PASSWORD=helloworld) - This instruction is used to pass 
 
 image (MySQL:latest) - This instruction defines what image the container should be built with (you will need to use this or build).	
 
-
 networks (ecommerce) - This instruction defines what networks the containers will be a part of. Containers can be part of multiple networks (i.e. a web server can only contact one database, but the database can contact multiple web servers).	
 
+
+depends_on: 
 
 
 
