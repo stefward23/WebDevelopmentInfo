@@ -1,17 +1,17 @@
 # Create/build and start the containers specified in the compose file
-docker-compose <name_of_yaml_file> up -d
+docker-compose up -d
 
 # Start the containers specified in the compose file
-docker-compose <name_of_yaml_file> start
+docker-compose start
 
 # Stop and delete the containers specified in the compose file
-docker-compose <name_of_yaml_file> down
+docker-compose down
 
 # Stop (not delete) the containers specified in the compose file
-docker-compose <name_of_yaml_file> stop
+docker-compose stop
 
 # Build (but will not start) the containers specified in the compose file
-docker-compose <name_of_yaml_file> build
+docker-compose build
 
 # Test the docker-compose file syntax
 docker-compose config

@@ -1,5 +1,5 @@
 # Login 
-mariadb -u root -p -h localhost
+mariadb -u root -p -h <ip_addr> 
 
 # Create a db structure
 CREATE DATABASE <name>;
