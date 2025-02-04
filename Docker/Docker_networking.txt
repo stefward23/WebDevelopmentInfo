@@ -1,0 +1,5 @@
+creates a network using the bridge network driver 
+docker network create -d bridge my-net
+
+running a container in the created network
+docker run --network=my-net -itd --name=container3 busybox
