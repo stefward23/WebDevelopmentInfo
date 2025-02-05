@@ -1,4 +1,4 @@
-### Opens the Apache site configuration file for 'example.com'
+### Open the Apache site configuration file for 'example.com'
 ```
 sudo nano /etc/apache2/sites-available/example.com.conf
 ```
@@ -12,19 +12,19 @@ sudo nano /etc/apache2/sites-available/example.com.conf
     CustomLog ${APACHE_LOG_DIR}/example.com_access.log combined
 </VirtualHost>
 ```
-### Creates the directory structure for the site files
+### Create directory structure for the site files
 ```
 sudo mkdir -p /var/www/example.com/public_html
 ```
-### Changes ownership of the site's directory to the Apache user/group (www-data)
+### Change ownership of the site's directory to the Apache user/group (www-data)
 ```
 sudo chown -R www-data:www-data /var/www/example.com/public_html
 ```
-### Enables the 'example.com.conf' site configuration
+### Enable the 'example.com.conf' site configuration
 ```
 sudo a2ensite example.com.conf
 ```
-### Reloads Apache to apply the changes made to the site configuration
+### Reload Apache to apply the changes made to the site configuration
 ```
 sudo systemctl reload apache2
 ```
