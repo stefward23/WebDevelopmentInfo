@@ -1,23 +1,33 @@
-#Create a Dockerfile file
-FROM <name_of_image>
+# Creates a Dockerfile that defines the environment for building the image
+```
+FROM <name_of_image>  # Specifies the base image to use
+```
+# Copies files from the source directory to the container’s destination directory
+```
 COPY <source> <destination>
-
-(e.g. If using nginx, nginx's default site location)
+```
+# Example: Copies files to nginx's default HTML directory (for a web server)
+```
 COPY <source_path> /usr/share/nginx/html
+```
+# Exposes the specified port (optional, mainly for documentation)
+# EXPOSE 80   # Tells Docker that the container listens on port 80
 
-#Expose ports (if not specified TCP is used)
-#EXPOSE 80 (mainly used as documentation)
+# CMD specifies the default command to run when the container starts (nginx example)
+CMD ["nginx", "-g", "daemon off;"]  # Runs nginx in the foreground when the container starts
 
-#CMD entry points. Adds commands that nginx image passes in when started by default 
-(e.g. CMD ["nginx", "-g", "daemon off;"])
+# Create .dockerignore file (exclude files from being copied into the Docker image)
+# Enter **/<file_name> into .dockerignore to prevent specific files/folders from being added to the image
 
-
-#Create .dockerignore file
-enter **/<file_name> into file
-
+# Runs the Docker container in detached mode, mapping port 80 on the host to port 80 on the container
+```
 docker run -d -p 80:80 <image_id> <container_name>
-
-docker ps 
-
-#exec into a container (alpine e.g.)
-docker exec -it <image_id> /bin/sh
+```
+# Lists all running containers with their IDs and basic information
+```
+docker ps
+```
+# Executes an interactive shell session inside a running container (useful for debugging or maintenance)
+```
+docker exec -it <image_id> /bin/sh  # For Alpine-based containers, use /bin/sh for shell access
+```
