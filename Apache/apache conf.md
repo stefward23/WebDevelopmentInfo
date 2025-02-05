@@ -1,16 +1,16 @@
-### Updates repositories and fetches information about available updates
+### Update repository and fetch information about available updates
 ```
 sudo apt update
 ```
-### Upgrades all installed packages to their latest versions
+### Upgrade all installed packages to their latest versions
 ```
 sudo apt upgrade
 ```
-### Installs Apache web server
+### Install Apache web server
 ```
 sudo apt install apache2 -y
 ```
-### Displays the IP address of the system
+### Display the IP address of the system
 ```
 hostname -I
 ```
@@ -18,15 +18,15 @@ hostname -I
 ```
 http://<ip_address>
 ```
-### Adds the user 'pi' to the 'www-data' group, allowing web server access
+### Add the user 'pi' to the 'www-data' group, allowing web server access
 ```
 sudo usermod -a -G www-data pi
 ```
-### Changes ownership of the files in /var/www/html to 'www-data' (Apache user/group)
+### Change ownership of the files in /var/www/html to 'www-data' (Apache user/group)
 ```
 sudo chown -R -f www-data:www-data /var/www/html
 ```
-### Edits the index.html file in /var/www/html (Apache default document root)
+### Edit the index.html file in /var/www/html (Apache default document root)
 ```
 sudo nano /var/www/html/index.html
 ```
