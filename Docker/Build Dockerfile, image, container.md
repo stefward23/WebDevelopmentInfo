@@ -1,6 +1,7 @@
 ### Creates a Dockerfile that defines the environment for building the image
+Specifies the base image to use
 ```
-FROM <name_of_image>  ### Specifies the base image to use
+FROM <name_of_image>
 ```
 ### Copies files from the source directory to the container’s destination directory
 ```
