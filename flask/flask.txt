@@ -12,3 +12,6 @@ pip install Flask
 ```
 
 # Routes are templates
+
+
+flask --app flaskr run
