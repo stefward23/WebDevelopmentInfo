@@ -1,5 +1,3 @@
-## NPM and Firebase commands
-
 ### Installs Firebase CLI globally on your machine
 ```
 npm install -g firebase-tools
