@@ -1,5 +1,3 @@
-#### Listing Containers
-
 ### List currently running containers
 ```
 docker ps
