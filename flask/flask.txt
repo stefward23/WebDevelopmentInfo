@@ -1,4 +1,6 @@
 # Create an environment
+
+apt install python3.12-venv
 ```
 python3 -m venv .venv
 ```
@@ -14,4 +16,4 @@ pip install Flask
 # Routes are templates
 
 
-flask --app flaskr run
+flask --app flaskr runun

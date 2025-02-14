@@ -1,0 +1,145 @@
+Debian Cheat Sheet
+
+Basic shell commands
+pwd 
+mkdir 
+ls -ld
+rmdir -rf
+touch <filename>
+cp
+mv
+rm
+which 
+file
+
+Intermediate shell commands
+echo
+cat
+ls -la >> <filename>
+df -hT
+du -sh /path
+uname -a 
+chmod 4 stands for read, 2 for write, 1 means execute, and 0 mean no authorization
+chown
+chgrp groupname <filename>
+tree -L 
+pstree
+find /path/to/search -type f -size <number>c 
+
+Mounting and unmounting filesystems
+mount -t ext4 /path  /dest
+unmount /path
+
+Pseudo-filesystems
+lsmod or cat/proc/modules
+lspci or cat/pro/pci
+
+Processes
+cd /proc/pid
+ls -l /proc | head -10
+kill -SIGKILL <PID>
+cat & to kill cat process
+jobs
+fg <job number>
+ps axu
+
+
+Kernel and system information
+/proc
+/proc/cpuinfo
+/proc/meminfo
+/proc/vmstats
+/proc/mounts
+/proc/filesystems
+/proc/uptime
+/proc/cmdline
+/proc/version
+/proc/cpuinfo | grep "physical id" | sort | uniq
+
+
+CPU usage
+top
+htop
+
+Storage
+lsblk
+
+Basic System settings
+/etc/host
+/etc/resolv.conf
+search
+options
+/etc/sysconfig/network-scripts
+ifcfg-ethX X is the interface number
+ifcfg-wlanX
+service network restart
+systemctl restart network
+/etc/netplan
+/etc/dhcp/dhclient.conf
+/etc/sysctl.conf
+
+User and group management
+adduser <username>
+useradd -d /home/<username> -m <username>
+userdel -r <username>
+addgroup <groupname>
+delgroup
+chgrp <groupname> <filename>
+usermod --comment "Demo account" --shell /bin/sh
+usermod -aG <groupname> <username>
+chmod g+w <filename>
+chage -l <username>
+chage -d 0 <username>
+chage -M 90 <username>
+passwd <username>
+passwd -l <username>
+passwd -u <username>
+/etc/passwd
+/etc/shadow
+/etc/group
+/etc/sudoers
+su -l <username>
+sudo -l
+
+Network configuration and debugging
+ip link list 
+/sbin/ip link show <name>
+ip link show eth2
+ip address show
+ip -4 address show lo
+ip -6 address show lo
+sudo ip link add name <name> type dummy
+sudo ip address add <addr> dev <name>
+sudo ip address flush dev <name>
+ip -4 neighbour show
+ip neighbour flush dev <name>
+sudo ip neighbour del dev <name> <IP address>
+ip route show
+ip address show <name>
+ip route show proto kernel
+ip route get <IP address>
+ip route add <network> via <gateway>
+ping -c5 <IP address>
+traceroute <IP address>
+
+Storage Management
+sudo fdisk -l
+sudo apt search lvm2 | grep installed
+
+
+
+Tools
+lscpu
+free
+lspci
+lsusb
+dmidecode
+lshw
+makeself
+ethtool --show-permaddr <name>
+nmcli
+
+
+
+ 
+
