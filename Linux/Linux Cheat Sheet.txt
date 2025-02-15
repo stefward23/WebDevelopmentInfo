@@ -100,6 +100,7 @@ passwd -u <username>
 /etc/sudoers
 su -l <username>
 sudo -l
+chroot
 
 Network configuration and debugging
 ip link list 
@@ -126,9 +127,28 @@ Storage Management
 sudo fdisk -l
 sudo apt search lvm2 | grep installed
 
+Logs
+journalctl -p <number or text priority>
+journalctl -S "10 minutes ago"
+/etc/logrotate.conf
+systemctl restart rsyslog
+ss -tulpn
+dmesg
+dmesg -T | less
+
+Centralized Authentication
+/etc/nsswitch.conf
+cat /etc/pam.d/sshd
+/etc/sssd/sssd.conf
+
 
 
 Tools
+haproxy
+keepalived
+ipvsadm
+samba
+fastfetch
 lscpu
 free
 lspci
