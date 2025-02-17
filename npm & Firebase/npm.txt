@@ -1,0 +1,3 @@
+npm -v 
+
+npm install -g npm
