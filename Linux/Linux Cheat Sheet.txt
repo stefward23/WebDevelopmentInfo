@@ -135,6 +135,8 @@ systemctl restart rsyslog
 ss -tulpn
 dmesg
 dmesg -T | less
+tail -f /var/log/auth.log
+sudo journalctl -u ssh --grep "Failed password" -checks failed ssh login attempts
 
 Centralized Authentication
 /etc/nsswitch.conf

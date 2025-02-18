@@ -1,0 +1,1 @@
+Uninstall current node version in Programs and features.
