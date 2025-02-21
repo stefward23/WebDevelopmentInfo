@@ -1,9 +1,18 @@
 # Zero Out Free Space, download sdelete from MS Sysinternals if not installed.
 sdelete -z C:
 
-# defragment the disk
+# Defragment the disk
 defrag C: /H /U /V
 
+# Delete partition on Volume
+#### Never delete the Healthy (EFI System Partition Volume)
+diskpart  
+list disk  
+select disk <#>  
+list partition  
+select partition <#>
+delete partition override
+exit
 
 
 
