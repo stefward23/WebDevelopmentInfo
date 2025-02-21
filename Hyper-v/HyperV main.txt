@@ -1,0 +1,10 @@
+# Zero Out Free Space, download sdelete from MS Sysinternals if not installed.
+sdelete -z C:
+
+# defragment the disk
+defrag C: /H /U /V
+
+
+
+
+
