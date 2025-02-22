@@ -14,6 +14,8 @@ select partition <#>
 delete partition override
 exit
 
+# Enable Nested Virtualization on host machine
+Set-VMProcessor -VMName <VMName> -ExposeVirtualizationExtensions $true
 
 
 
