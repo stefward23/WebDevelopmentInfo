@@ -20,19 +20,19 @@ Steps.
 6. Harden
 
 # Key Areas
-HTTPS config: Disable SSLv2 and SSLv3, enforce TLS 1.2+, use strong ciphers (RSA, SHA256), enable HTTP Strict Transport Security (HSTS) to force HTTPS.   
-HTTP methods: Disable DELETE, PUT, TRACE, POST.   
-HTTP responses: Disable X-Frame-Options. prevents clickjacking. X-Content-Type-Options, prevent MIME sniffing   
-DDoS: Rate limit from one IP address to avoid resource exhaustion.
-Directory Traversal: Ensure users cannot reach sensitive information via paths ../../etc/passwd, set correct file permissions  
-Server Tokens: By default nginx reveals its version in HTTP headers, hide server info   
-Container: Install ufw and block ports except 80, 443  
-VM firewall: Block all ports except 80, 443  
-XSS attacks: Headers like X-Forwarded-For, User-Agent can be manipulated into an XSS payload  
-Simulate ~300 users accessing app simultaneously 
-Nginx Caching: Reduces server load  
-Logs & Monitorin: Enable access logs, error logs   
-MInimize base images, least privilege within container, AppArmor/SELinux
+1. HTTPS config: Disable SSLv2 and SSLv3, enforce TLS 1.2+, use strong ciphers (RSA, SHA256), enable HTTP Strict Transport Security (HSTS) to force HTTPS.
+2. HTTP methods: Disable DELETE, PUT, TRACE, POST.   
+3. HTTP responses: Disable X-Frame-Options. prevents clickjacking. X-Content-Type-Options, prevent MIME sniffing   
+4. DDoS: Rate limit from one IP address to avoid resource exhaustion.
+5. Directory Traversal: Ensure users cannot reach sensitive information via paths ../../etc/passwd, set correct file permissions  
+6. Server Tokens: By default nginx reveals its version in HTTP headers, hide server info   
+7. Container: Install ufw and block ports except 80, 443  
+8. VM firewall: Block all ports except 80, 443  
+9. XSS attacks: Headers like X-Forwarded-For, User-Agent can be manipulated into an XSS payload  
+10. Simulate ~300 users accessing app simultaneously 
+11. Nginx Caching: Reduces server load  
+12. Logs & Monitorin: Enable access logs, error logs   
+13. MInimize base images, least privilege within container, AppArmor/SELinux
 
 ## Attacks
 #### Injection attacks: SQL, command, ldap.  

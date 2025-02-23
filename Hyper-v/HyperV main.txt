@@ -18,4 +18,6 @@ exit
 Set-VMProcessor -VMName <VMName> -ExposeVirtualizationExtensions $true
 
 
+# See ethernet adapter vms are connected to
+Get-VMNetworkAdapter -VMName "MyVM" | Select-Object VMName, SwitchName, MacAddress
 
