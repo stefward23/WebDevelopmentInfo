@@ -1,4 +1,4 @@
-# App vm (srv2025) 
+# App vm (srv2025) (OPTION 2: Ubuntu)
 Docker desktop  
 Nginx web server container (Stateless webapp)
 # Pentest vm (Kali)
