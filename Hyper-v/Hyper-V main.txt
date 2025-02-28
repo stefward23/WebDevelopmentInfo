@@ -14,9 +14,14 @@ select partition <#>
 delete partition override
 exit
 
+<<<<<<< HEAD:Hyper-v/HyperV main.txt
 # Enable Nested Virtualization on host machine
 Set-VMProcessor -VMName <VMName> -ExposeVirtualizationExtensions $true
 
+=======
+# Enable Nested Virtualization 
+Set-VMProcessor -VMName "MyVM" -ExposeVirtualizationExtensions $true
+>>>>>>> 741fe41247c21aa1b7843957780d22cf62b1988d:Hyper-v/Hyper-V main.txt
 
 # See ethernet adapter vms are connected to
 Get-VMNetworkAdapter -VMName "MyVM" | Select-Object VMName, SwitchName, MacAddress

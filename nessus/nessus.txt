@@ -1,0 +1,3 @@
+# Start nessus
+
+/bin/systemctl start nessusd.service
