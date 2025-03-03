@@ -1,0 +1,9 @@
+# Get the hash of the commit
+git log
+
+
+# Rebase to change the author
+git rebase -i <commit hash> 
+git commit --amend --author="author name <email>"
+git push --force
+
