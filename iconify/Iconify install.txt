@@ -1,1 +1,10 @@
 npm install --save-dev @iconify/vue
+
+# Use iconify offline
+npm i -D unplugin-icons
+
+# Install full collection
+npm i -D @iconify/json
+
+# Install by Icon Set
+npm i -D @iconify-json/[collection-id]
