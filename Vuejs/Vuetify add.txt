@@ -1,0 +1,2 @@
+# Install vuetify and plugin locally
+npm install vuetify vite-plugin-vuetify
