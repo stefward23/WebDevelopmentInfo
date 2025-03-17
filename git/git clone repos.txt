@@ -13,7 +13,7 @@ git sparse-checkout init --cone
 copy repo path
 
 5)
-git sparse-checkout set /path/to/folder
+git sparse-checkout set folder/
 
 6)
-git checkout <main/branch/etc>
+git checkout <main || branch || etc>
