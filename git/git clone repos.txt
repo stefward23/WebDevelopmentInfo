@@ -17,3 +17,6 @@ git sparse-checkout set folder/
 
 6)
 git checkout <main || branch || etc>
+
+# If you delete or rename the file and want to redownload from the source again (github).
+git checkout HEAD -- folder/
