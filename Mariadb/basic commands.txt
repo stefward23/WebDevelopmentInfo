@@ -7,6 +7,9 @@ CREATE DATABASE <name>;
 # USE
 USE <name>;
 
+# show database table columns
+DESCRIBE <table_name>
+
 # Show tables
 SHOW TABLES;
 
