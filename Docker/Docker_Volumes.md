@@ -25,3 +25,7 @@ docker volume prune
 ```
 docker run --name my_nginx_c1 --volume my_nginx_volume:/usr/share/nginx/html -d nginx
 ```
+### Mount a windows path into a container using WSL2
+```
+docker run -it --rm -v /mnt/path/to/windows/folder:/path/to/container <img id> sh
+```
