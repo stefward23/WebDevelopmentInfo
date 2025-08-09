@@ -8,3 +8,8 @@ New-AzResourceGroup -Name rg_powershell -Location "East US"
 # Azure CLI
 ## Create new resource group
 az group create --name rg_cli --location eastus 
+## Create new user
+az ad user create \
+  --display-name "CLICreatedUser" \
+  --user-principal-name clicreateduser@stefmward23outlook.onmicrosoft.com \
+  --password "" \
