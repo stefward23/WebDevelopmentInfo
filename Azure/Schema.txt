@@ -1,0 +1,22 @@
+| Resource        | Code   |
+| --------------- | ------ |
+| Resource Group  | `rg`   |
+| Virtual Machine | `vm`   |
+| Router          | `rt`   |
+| Firewall        | `fw`   |
+| Storage Account | `st`   |
+| Virtual Network | `vnet` |
+| Subnet          | `snet` |
+| User Account    | `usr`  |
+
+
+
+| Environment | Code  |
+| ----------- | ----- |
+| Development | `dev` |
+| Testing     | `tst` |
+| Production  | `prd` |
+
+
+username: stefanward
+pw: Newuser!two3
