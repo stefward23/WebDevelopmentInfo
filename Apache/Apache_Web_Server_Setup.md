@@ -1,5 +1,6 @@
 # Update system packages
 sudo apt update 
+
 sudo apt upgrade -y
 
 # Install apache2
@@ -7,11 +8,14 @@ sudo apt install apache2 -y
 
 # Adjust firewall (if UFW is enabled)
 sudo ufw allow 'Apache'
+
 sudo ufw enable      # only if not already enabled
+
 sudo ufw status
 
 # Start and enable apache
 sudo systemctl start apache2
+
 sudo systemctl enable apache2
 
 # Check apache status:
@@ -22,6 +26,7 @@ http://<your_server_ip>
 
 # Create a directory for your site:
 sudo mkdir -p /var/www/example.com/html
+
 sudo chown -R $USER:$USER /var/www/example.com/html
 
 # Create a sample HTML file:
