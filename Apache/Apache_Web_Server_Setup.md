@@ -33,10 +33,11 @@ sudo chown -R $USER:$USER /var/www/example.com/html
 nano /var/www/example.com/html/index.html
 
 #### Add
-<html>
+````<html>
   <head><title>Welcome</title></head>
   <body><h1>Apache on Ubuntu Works!</h1></body>
 </html>
+````
 
 # Create a virtual host config
 sudo nano /etc/apache2/sites-available/example.com.conf
