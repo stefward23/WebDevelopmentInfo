@@ -1,6 +1,5 @@
 # Update system packages
 sudo apt update 
-
 sudo apt upgrade -y
 
 # Install apache2
