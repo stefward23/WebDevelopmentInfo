@@ -1,6 +1,9 @@
+# Tool to identify hashes
 https://gitlab.com/kalilinux/packages/hash-identifier/-/tree/kali/master
 
 python3 hash-id.py
+
+# John the ripper
 
 john --format=[format] --wordlist=[path to wordlist] [path to file]
 
