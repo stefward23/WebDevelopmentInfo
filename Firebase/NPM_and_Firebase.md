@@ -1,3 +1,8 @@
+### Firebase version
+```
+firebase --version
+```
+
 ### Installs Firebase CLI globally on your machine
 ```
 npm install -g firebase-tools
@@ -15,3 +20,39 @@ npm run build
 firebase deploy
 ```
 
+### Updates: see which are available
+```
+npm outdated -g --depth=0
+```
+
+### Update npm 
+```
+npm install -g npm@latest
+```
+
+### Vite: Check version
+```
+npm list vite
+```
+
+### Check latest safe vite version 
+```
+npm show vite version
+```
+
+### Upgrade vite to safe version
+```
+npm install vite@latest
+```
+
+### Node: check version
+```
+node -v
+```
+
+### Node: upgrade 
+```
+nvm install --lts
+nvm install node        # latest version
+nvm use node
+```
