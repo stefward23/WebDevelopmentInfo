@@ -4,7 +4,12 @@ Below are common target specs, scan types, discovery options, and port selection
 
 ---
 
-nmap -sV -p 80,443 --script http-title <IP>
+Service/port scans and version detection
+
+nmap -sV -p 80,443 --script http-title <IP> can show site/page titles, server versions, and sometimes virtual host hints.
+
+
+
 
 ## Target specification
 Scan a single IP  
