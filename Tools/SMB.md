@@ -17,7 +17,7 @@ cd <remote-dir>   # change remote directory
 pwd               # show remote working directory  
 lcd <local-dir>   # change local directory (where downloads go)  
 lpwd              # show local directory  
-get <file>        # download single file  
+get "file"        # download single file  
 mget <pattern>    # download multiple files (wildcards)  
 put <file>        # upload single file  
 mput <pattern>    # upload multiple files  
