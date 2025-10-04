@@ -4,6 +4,9 @@ Enum4linux is a Perl wrapper around Samba tools (smbclient, rpcclient, net, nmbl
 
 ---
 
+## SMB client connect
+Example: smbclient //10.10.10.10/secrets -U Anonymous -p 445
+
 ---
 
 ## Quick reference (one-liners)
