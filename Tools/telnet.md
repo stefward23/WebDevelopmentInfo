@@ -29,6 +29,8 @@ example:
 GET / HTTP/1.1
 Host: telnet.thm
 
+curl -V http://<ip>/
+
 Reverse DNS (PTR)
 
 dig -x <IP> +short
