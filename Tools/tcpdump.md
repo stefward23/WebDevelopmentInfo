@@ -3,6 +3,9 @@
 ---
 
 ## Basic capture
+
+sudo tcpdump ip proto \\icmp -i <eth0>
+
 Capture packets on the default interface (requires sudo/root):  
     sudo tcpdump
 
