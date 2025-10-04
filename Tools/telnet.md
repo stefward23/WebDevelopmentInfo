@@ -24,7 +24,7 @@ Use netcat as a lightweight telnet-like alternative (if telnet is unavailable):
 
 ---
 ## Run ping on telnet connection
-.RUN ping <ip> -c 1
+.RUN ping "ip" -c 1
 
 ## Web server/page
 example:
