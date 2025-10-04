@@ -9,6 +9,9 @@
 ---
 
 ## Basic connect / listen
+
+nc -lvnp <listening port> 
+
 Connect to a host on port 80 (client mode):  
     nc example.com 80
 
