@@ -23,7 +23,6 @@ put <file>        # upload single file
 mput <pattern>    # upload multiple files  
 del <file>        # delete remote file  
 rm <file>         # alias for del  
-
 mkdir <dir>       # create remote directory  
 rmdir <dir>       # remove remote directory (if empty)  
 recurse ON|OFF    # enable/disable recursive mget/mput  
