@@ -20,24 +20,24 @@ Specify username on connect (some clients support):
     ftp ftp://username@ftp.example.com
 
 Common interactive commands (after connecting):
-    ls         # list remote directory
-    dir        # detailed list
-    cd <dir>   # change remote directory
-    lcd <dir>  # change local directory
-    pwd        # remote working directory
-    lpwd       # local working directory
-    get file   # download single file
-    mget *.txt # download multiple files (confirm per file)
-    put file   # upload single file
-    mput *.txt # upload multiple files (confirm per file)
-    binary     # switch to binary mode (important for non-text files)
-    ascii      # switch to ascii/text mode
-    mkdir name # create remote directory
-    rmdir name # remove remote directory (must be empty)
-    delete file
-    rename old new
-    chmod 755 file   # may fail depending on server
-    quit       # exit client
+    ls         # list remote directory  
+    dir        # detailed list  
+    cd <dir>   # change remote directory  
+    lcd <dir>  # change local directory  
+    pwd        # remote working directory  
+    lpwd       # local working directory  
+    get file   # download single file  
+    mget *.txt # download multiple files (confirm per file)  
+    put file   # upload single file  
+    mput *.txt # upload multiple files (confirm per file)  
+    binary     # switch to binary mode (important for non-text files)  
+    ascii      # switch to ascii/text mode  
+    mkdir name # create remote directory  
+    rmdir name # remove remote directory (must be empty)  
+    delete file  
+    rename old new  
+    chmod 755 file   # may fail depending on server  
+    quit       # exit client  
 
 Disable prompting for mget/mput confirmations (classic client):
     prompt
