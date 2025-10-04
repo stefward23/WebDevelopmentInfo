@@ -29,6 +29,14 @@ example:
 GET / HTTP/1.1
 Host: telnet.thm
 
+Reverse DNS (PTR)
+
+dig -x <IP> +short
+
+nslookup <IP>
+
+If there’s a PTR record you’ll get a hostname. Not guaranteed — many IPs don’t have useful PTRs.
+
 ---
 
 ## Common interactive commands (local telnet client commands)
