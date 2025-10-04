@@ -4,6 +4,8 @@ Below are common target specs, scan types, discovery options, and port selection
 
 ---
 
+nmap -sV -p 80,443 --script http-title <IP>
+
 ## Target specification
 Scan a single IP  
     nmap 192.168.1.1
