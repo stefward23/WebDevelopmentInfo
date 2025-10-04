@@ -28,6 +28,7 @@ Use netcat as a lightweight telnet-like alternative (if telnet is unavailable):
 example:
 GET / HTTP/1.1
 Host: telnet.thm
+
 ---
 
 ## Common interactive commands (local telnet client commands)
