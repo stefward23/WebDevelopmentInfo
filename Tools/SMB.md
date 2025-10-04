@@ -4,6 +4,35 @@ Enum4linux is a Perl wrapper around Samba tools (smbclient, rpcclient, net, nmbl
 
 ---
 
+## Navigating SMB
+# List available shares on a host
+smbclient -L //<IP> -U <USER>
+
+# Connect to a share (you'll get an smbclient prompt)
+smbclient //<IP>/<SHARE> -U <USER>
+# then in the smbclient prompt:
+ls                # list files in the current remote dir
+dir               # same as ls
+cd <remote-dir>   # change remote directory
+pwd               # show remote working directory
+lcd <local-dir>   # change local directory (where downloads go)
+lpwd              # show local directory
+get <file>        # download single file
+mget <pattern>    # download multiple files (wildcards)
+put <file>        # upload single file
+mput <pattern>    # upload multiple files
+del <file>        # delete remote file
+rm <file>         # alias for del
+mkdir <dir>       # create remote directory
+rmdir <dir>       # remove remote directory (if empty)
+recurse ON|OFF    # enable/disable recursive mget/mput
+prompt            # toggle interactive prompting for mget/mput
+mask <pattern>    # set wildcard mask for mget/mput
+stat <file>       # show file info
+help              # list smbclient commands
+quit / exit       # leave smbclient
+
+
 ## SMB client connect
 Example: smbclient //10.10.10.10/secrets -U Anonymous -p 445
 
