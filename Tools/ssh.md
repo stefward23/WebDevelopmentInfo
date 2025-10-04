@@ -12,6 +12,9 @@ Connect to a host on a different port:
 Use a specific private key file:  
     ssh -i ~/.ssh/id_rsa user@host.example.com
 
+# Public keys
+Typically have username ammended at the end of file
+
 Connect by IP address:  
     ssh admin@192.168.1.10
 
