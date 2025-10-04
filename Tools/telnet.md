@@ -23,6 +23,8 @@ Use netcat as a lightweight telnet-like alternative (if telnet is unavailable):
     nc host.example.com 23
 
 ---
+## Run ping on telnet connection
+.RUN ping <ip> -c 1
 
 ## Web server/page
 example:
