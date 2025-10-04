@@ -1,4 +1,4 @@
-# netcat (nc / ncat) — quick, copy-friendly Markdown cheat sheet
+# netcat (nc / ncat) — cheat sheet
 
 ---
 
