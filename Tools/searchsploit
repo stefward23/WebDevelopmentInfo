@@ -1,0 +1,5 @@
+searchsploit is a command-line tool that lets you search your local copy of the Exploit-DB vulnerability/exploit archive for exploits, shellcodes, and related entries — useful when doing vulnerability research or post-scan triage.
+
+## example
+map 10.201.122.176 -sV -Pn -oX file.xml 
+searchsploit --nmap -v file.xml
