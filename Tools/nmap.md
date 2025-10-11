@@ -1,4 +1,4 @@
-# Nmap — quick, copy-friendly Markdown cheat sheet
+# Nmap — cheat sheet
 
 Below are common target specs, scan types, discovery options, and port selection examples — each command shown as an indented code block so you can paste it straight into a terminal.
 
