@@ -8,6 +8,7 @@ https://cve.mitre.org/
 Threat Intel site that provides information about IP addresses, domain names, etc.
 https://www.robtex.com/
 
+https://whois.domaintools.com/
 
 https://crackstation.net/
 
