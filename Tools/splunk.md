@@ -91,10 +91,23 @@ index=botsv1 sourcetype=stream:http dest_ip="192.168.250.70" http_method=POST fo
 
 ---
 
-## Quick tips
+## Quick tips*.
 - Use `sourcetype=stream*` to match multiple stream sourcetypes if needed.  
 - Adjust the regex to allow special characters in passwords:  
   `"passwd=(?<creds>[^&]+)"`  
 - Use `| head 100` or set a time range in Splunk to limit results.
 
+index=botsv1 sourcetype=stream:http dest_ip="192.168.250.70" *.exe
 
+For the evidence of execution, we can leverage sysmon and look at the EventCode=1 for program execution.
+sysmon
+WinEventlog
+
+Search Query: index=botsv1 "3791.exe" sourcetype="XmlWinEventLog" EventCode=1
+Query Explanation: This query will look for the process Creation logs containing the term "3791.exe" in the logs.
+
+index=botsv1 dest=192.168.250.70 sourcetype=suricata
+
+
+The URL field shows 2 PHP files and one jpeg file. This jpeg file looks interesting. Let us change the search query and see where this jpeg file came from.
+Search Query: index=botsv1 url="/poisonivy-is-coming-for-you-batman.jpeg" dest_ip="192.168.250.70" | table _time src dest_ip http.hostname url
