@@ -13,3 +13,7 @@ https://whois.domaintools.com/
 https://crackstation.net/
 
 https://www.virustotal.com/gui/home/upload
+
+https://www.threatminer.org/
+
+https://hybrid-analysis.com/
