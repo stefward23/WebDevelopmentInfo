@@ -1,6 +1,9 @@
 # tcpdump — cheat sheet
 
 ---
+## Example:
+tcpdump -i eth0 -c 50 -v captures and displays 50 packets by listening on the eth0 interface, which is a wired Ethernet, and displays them verbosely.
+
 
 ## Basic capture
 
