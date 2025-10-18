@@ -46,6 +46,14 @@ Print verbose packet info (one level) / very verbose:
 
 ---
 
+
+## Options
+tcpdump -q	Quick and quite: brief packet information  
+tcpdump -e	Include MAC addresses  
+tcpdump -A	Print packets as ASCII encoding  
+tcpdump -xx	Display packets in hexadecimal format  
+tcpdump -X	Show packets in both hexadecimal and ASCII formats  
+
 ## Capture to file / read from file
 Write capture to pcap file:  
     sudo tcpdump -w capture.pcap -i eth0
