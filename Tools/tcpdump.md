@@ -202,7 +202,17 @@ Use `tshark` (CLI Wireshark) for more advanced field extraction:
 Use `editcap` to split/cut pcap files by time or packet count:  
     editcap -c 1000 large.pcap part.pcap
 
----
+## Advanced 
+tcp-syn TCP SYN (Synchronize)  
+tcp-ack TCP ACK (Acknowledge)  
+tcp-fin TCP FIN (Finish)  
+tcp-rst TCP RST (Reset)  
+tcp-push TCP Push  
+Based on the above, we can write:  
+
+tcpdump "tcp[tcpflags] == tcp-syn" to capture TCP packets with only the SYN (Synchronize) flag set, while all the other flags are unset.  
+tcpdump "tcp[tcpflags] & tcp-syn != 0" to capture TCP packets with at least the SYN (Synchronize) flag set.  
+tcpdump "tcp[tcpflags] & (tcp-syn|tcp-ack) != 0" to capture TCP packets with at least the SYN (Synchronize) or ACK (Acknowledge) flags set.  
 
 ## Helpful BPF snippets
 HTTP requests:  
