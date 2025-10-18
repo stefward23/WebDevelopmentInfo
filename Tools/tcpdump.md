@@ -218,15 +218,15 @@ Only packets larger than X bytes (example > 1500):
     'greater 1500'
 
 ---
-
-tcpdump host IP or tcpdump host HOSTNAME	Filters packets by IP address or hostname
-tcpdump src host IP or	Filters packets by a specific source host
-tcpdump dst host IP	Filters packets by a specific destination host
-tcpdump port PORT_NUMBER	Filters packets by port number
-tcpdump src port PORT_NUMBER	Filters packets by the specified source port number
-tcpdump dst port PORT_NUMBER	Filters packets by the specified destination port number
-tcpdump PROTOCOL	Filters packets by protocol; examples include ip, ip6, and icmp
-
+  
+tcpdump host IP or tcpdump host HOSTNAME	Filters packets by IP address or hostname  
+tcpdump src host IP or	Filters packets by a specific source host  
+tcpdump dst host IP	Filters packets by a specific destination host  
+tcpdump port PORT_NUMBER	Filters packets by port number  
+tcpdump src port PORT_NUMBER	Filters packets by the specified source port number  
+tcpdump dst port PORT_NUMBER	Filters packets by the specified destination port number  
+tcpdump PROTOCOL	Filters packets by protocol; examples include ip, ip6, and icmp  
+  
 ## Quick reference (one-liners)
 Capture 1,000 packets on eth0, numeric output, full packets, save to file:  
     sudo tcpdump -i eth0 -c 1000 -n -s 0 -w capture.pcap
