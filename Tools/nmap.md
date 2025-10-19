@@ -8,7 +8,12 @@ Service/port scans and version detection
 
 nmap -sV -p 80,443 --script http-title <IP> can show site/page titles, server versions, and sometimes virtual host hints.
 
-
+## Basic options
+-sT	TCP connect scan – complete three-way handshake  
+-sS	TCP SYN – only first step of the three-way handshake  
+-sU	UDP scan  
+-F	Fast mode – scans the 100 most common ports  
+-p[range]	Specifies a range of port numbers – -p- scans all the ports  
 
 
 ## Target specification
