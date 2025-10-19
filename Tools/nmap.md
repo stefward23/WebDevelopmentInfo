@@ -14,6 +14,10 @@ nmap -sV -p 80,443 --script http-title <IP> can show site/page titles, server ve
 -sU	UDP scan  
 -F	Fast mode – scans the 100 most common ports  
 -p[range]	Specifies a range of port numbers – -p- scans all the ports  
+-O	OS detection  
+-sV	Service and version detection  
+-A	OS detection, version detection, and other additions  
+-Pn	Scan hosts that appear to be down  
 
 
 ## Target specification
