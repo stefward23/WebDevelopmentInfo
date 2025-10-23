@@ -17,3 +17,7 @@ https://www.virustotal.com/gui/home/upload
 https://www.threatminer.org/
 
 https://hybrid-analysis.com/
+
+https://codebeautify.org/javascript-obfuscator
+
+https://obf-io.deobfuscate.io/
