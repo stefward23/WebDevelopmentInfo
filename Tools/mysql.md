@@ -1,4 +1,4 @@
-# 🐬 MySQL Cheat Sheet  
+# 🐬 MySQL
 
 ## 🔧 Connection & Basics  
 mysql -u username -p                   # Connect to MySQL  
@@ -18,8 +18,7 @@ CREATE TABLE table_name (              # Create a table
   id INT AUTO_INCREMENT PRIMARY KEY,  
   name VARCHAR(100),  
   age INT,  
-  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP  
-);  
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP);    
 ALTER TABLE table_name ADD column_name VARCHAR(50);  # Add a column  
 ALTER TABLE table_name DROP COLUMN column_name;       # Remove a column  
 RENAME TABLE old_name TO new_name;                    # Rename a table  
@@ -39,6 +38,23 @@ SELECT DISTINCT column_name FROM table_name;                         # Unique va
 SELECT * FROM table_name WHERE name LIKE 'J%';                       # Pattern match  
 SELECT * FROM table_name WHERE age BETWEEN 20 AND 40;                # Range condition  
 
+## ⚙️ Operators  
+=, !=, <>, >, <, >=, <=              # Comparison operators  
+AND, OR, NOT                         # Logical operators  
+IN (value1, value2, ...)             # Match multiple values  
+BETWEEN x AND y                      # Between range  
+LIKE 'pattern%'                      # Pattern match  
+IS NULL / IS NOT NULL                # Null checks  
+
+## 📜 Clauses  
+WHERE condition                      # Filter rows  
+ORDER BY column ASC|DESC             # Sort results  
+GROUP BY column                      # Group results  
+HAVING condition                     # Filter grouped results  
+LIMIT number                         # Limit output rows  
+OFFSET number                        # Skip rows before returning results  
+UNION / UNION ALL                    # Combine multiple SELECT queries  
+
 ## 🔗 Joins  
 SELECT a.name, b.salary  
 FROM employees a  
@@ -48,12 +64,27 @@ SELECT a.name, b.salary
 FROM employees a  
 LEFT JOIN salaries b ON a.id = b.emp_id;                             # Left Join  
 
+SELECT a.name, b.salary  
+FROM employees a  
+RIGHT JOIN salaries b ON a.id = b.emp_id;                            # Right Join  
+
 ## 🧮 Aggregate Functions  
 SELECT COUNT(*) FROM table_name;                                     # Count rows  
 SELECT AVG(age) FROM table_name;                                     # Average value  
 SELECT SUM(amount) FROM table_name;                                  # Sum  
 SELECT MIN(age), MAX(age) FROM table_name;                           # Min & Max  
 SELECT column, COUNT(*) FROM table_name GROUP BY column;             # Group results  
+
+## 🧠 Common Functions  
+UCASE(name) / UPPER(name)                # Convert to uppercase  
+LCASE(name) / LOWER(name)                # Convert to lowercase  
+CONCAT(first_name, ' ', last_name)       # Combine strings  
+LENGTH(column)                           # Length of string  
+NOW()                                    # Current date/time  
+CURDATE()                                # Current date  
+DATEDIFF(date1, date2)                   # Days between two dates  
+ROUND(number, decimals)                  # Round number  
+IF(condition, value_if_true, value_if_false)  # Conditional logic  
 
 ## 🔒 User Management  
 CREATE USER 'user'@'localhost' IDENTIFIED BY 'password';             # Create user  
