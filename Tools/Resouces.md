@@ -4,6 +4,8 @@ https://www.cvedetails.com/
 
 https://cve.mitre.org/
 
+Cyberchef (The Cyber Swiss Army Knife - a web app for encryption, encoding, compression and data analysis.)
+
 
 Threat Intel site that provides information about IP addresses, domain names, etc.
 https://www.robtex.com/
