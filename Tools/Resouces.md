@@ -27,3 +27,6 @@ https://codebeautify.org/javascript-obfuscator
 https://obf-io.deobfuscate.io/
 
 https://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet
+
+
+https://cyberchef.io/
