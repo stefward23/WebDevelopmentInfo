@@ -98,6 +98,9 @@ Send binary data from stdin
 ---
 
 ## Downloading options
+Download favicon - it will download the favicon and get its md5 hash value which you can then lookup on the https://wiki.owasp.org/index.php/OWASP_favicon_database(opens in new tab).  
+curl https://static-labs.tryhackme.cloud/sites/favicon/images/favicon.ico | md5sum 
+
 Resume an interrupted download (continue)  
     curl -C - -O https://example.com/largefile.zip
 
