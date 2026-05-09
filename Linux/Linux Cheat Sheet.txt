@@ -24,6 +24,7 @@ chown
 chgrp groupname <filename>
 tree -L 
 pstree
+find . -name "filename.txt"  
 find /path/to/search -type f -size <number>c 
 
 Mounting and unmounting filesystems
