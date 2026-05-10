@@ -8,6 +8,9 @@
 ```bash
 gobuster dir -u https://example.com -w /usr/share/wordlists/dirb/common.txt
 ```
+```
+gobuster dir -u <target> -w /usr/share/wordlists/dirbuster/<list> -x php,html,txt,zip -o <file>
+```
 
 ### Scan with extensions, show length, follow redirects, 50 threads, save output
 ```bash
