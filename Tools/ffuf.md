@@ -100,6 +100,11 @@ Hide responses with a specific size:
 ffuf -u http://target/FUZZ -w common.txt -fs 0
 ```
 
+
+```
+ffuf -w /usr/share/wordlists/SecLists/Discovery/DNS/namelist.txt -H "Host: FUZZ.acmeitsupport.thm" -u http://10.64.139.189 -fs {size}
+```
+
 Useful when:
 - Servers return fake 200 responses
 - Error pages always have same size
